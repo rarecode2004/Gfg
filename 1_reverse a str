@@ -21,9 +21,24 @@ class Solution {
         StringBuilder b=new StringBuilder(s);
         b.reverse();
         String z=b.toString();
-        return z;
+        return z;  
+    }
+}
+
+
+// Using StringBuilder
+
+class Solution {
+    static String revStr(String s) {
+        int len=s.length();
+        int i;
         
-        
-        
+        StringBuilder sb=new StringBuilder();
+        for(i=len-1;i>=0;i--){
+            char q=s.charAt(i);
+            sb.append(q);
+            
+        }
+        return sb.toString();
     }
 }
